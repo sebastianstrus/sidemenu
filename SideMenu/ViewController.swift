@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let ownGreen = UIColor(red: 0/255, green: 128.0/255, blue: 0/255, alpha: 1.0)
     
     @IBOutlet weak var sideView: UIView!
     @IBOutlet weak var shapeView: UIView!
@@ -40,40 +41,41 @@ class ViewController: UIViewController {
         
         //set image and icons
         profileImageView.layer.cornerRadius = 28
-        profileImageView.layer.borderWidth = 1
+        profileImageView.layer.borderWidth = 2
+        profileImageView.layer.borderColor = ownGreen.cgColor
         profileImageView.clipsToBounds = true
         profileImageView.transform = CGAffineTransform(translationX: 69, y: 0)
         
         icon1View.image = UIImage(named:"home_icon")?.withRenderingMode(.alwaysTemplate)
-        icon1View.tintColor = UIColor.white
+        icon1View.tintColor = ownGreen
         icon1View.transform = CGAffineTransform(translationX: 69, y: 0)
         
         icon2View.image = UIImage(named:"profile_icon")?.withRenderingMode(.alwaysTemplate)
-        icon2View.tintColor = UIColor.white
+        icon2View.tintColor = ownGreen
         icon2View.transform = CGAffineTransform(translationX: 69, y: 0)
         
         icon3View.image = UIImage(named:"map_icon")?.withRenderingMode(.alwaysTemplate)
-        icon3View.tintColor = UIColor.white
+        icon3View.tintColor = ownGreen
         icon3View.transform = CGAffineTransform(translationX: 69, y: 0)
         
         icon4View.image = UIImage(named:"add_icon")?.withRenderingMode(.alwaysTemplate)
         icon4View.transform = CGAffineTransform(translationX: 69, y: 0)
-        icon4View.tintColor = UIColor.white
+        icon4View.tintColor = ownGreen
         
         icon5View.image = UIImage(named:"list_icon")?.withRenderingMode(.alwaysTemplate)
-        icon5View.tintColor = UIColor.white
+        icon5View.tintColor = ownGreen
         icon5View.transform = CGAffineTransform(translationX: 69, y: 0)
         
         icon6View.image = UIImage(named:"settings_icon")?.withRenderingMode(.alwaysTemplate)
-        icon6View.tintColor = UIColor.white
+        icon6View.tintColor = ownGreen
         icon6View.transform = CGAffineTransform(translationX: 69, y: 0)
         
         
         waveView.image = UIImage(named:"wave")?.withRenderingMode(.alwaysTemplate)
-        waveView.tintColor = UIColor.purple
+        waveView.tintColor = UIColor.white
         
         
-        partShapeView.backgroundColor = UIColor.purple
+        partShapeView.backgroundColor = UIColor.white
         
         //sideView.layer.zPosition = 1
         
